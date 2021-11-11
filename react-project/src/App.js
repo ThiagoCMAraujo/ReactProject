@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import HelloWorld from './components/HelloWorld';
 import './App.css';
 
 function App() {
@@ -13,22 +14,7 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                
-                <p>Soma: {sum(1, 3)}</p>
-                <img src={url} alt = ""/>    
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React with {name}
-
-                </a>
+                <HelloWorld/>
             </header>
         </div>
     );
