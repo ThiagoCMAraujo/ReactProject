@@ -1,20 +1,19 @@
-import logo from './logo.svg';
-import HelloWorld from './components/HelloWorld';
 import './App.css';
+import Pessoa from './components/Pessoa';
+import SayMyName from './components/SayMyName';
+import HelloWorld from './components/HelloWorld';
+
+
 
 function App() {
-    const name = 'Thiago'
-
-    function sum(a, b) {
-        return a + b
-    }
-
-    const url = 'https://via.placeholder.com/150'
-
+    const nome = "teste";
     return (
         <div className="App">
             <header className="App-header">
                 <HelloWorld/>
+                <SayMyName nome ="Thiago" />
+                <SayMyName nome = {nome} />
+                <Pessoa nome = "Thiago" idade = "20" profissao="Estudante" foto = "https://via.placeholder.com/150"/>
             </header>
         </div>
     );
