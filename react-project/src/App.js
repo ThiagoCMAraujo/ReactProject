@@ -1,9 +1,9 @@
 import './App.css';
 import Frase from './components/Frase';
-import Pessoa from './components/Pessoa';
-import SayMyName from './components/SayMyName';
+import Eventos from './components/Eventos'
 import List from './components/List'
 import HelloWorld from './components/HelloWorld';
+import Forms from './components/Forms';
 
 
 
@@ -11,10 +11,10 @@ function App() {
     const nome = "teste";
     return (
         <div className="App">
-                <HelloWorld/>
-                <Frase/>
-            
-                <List/>
+                <Eventos numero = "1"/>
+                <Eventos numero = "2"/>
+                <Forms/>
+
         </div>
     );
 }
